@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1002345368994",
+    "firebase_url": "https://exa02pdmajesus.firebaseio.com",
+    "project_id": "exa02pdmajesus",
+    "storage_bucket": "exa02pdmajesus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002345368994:android:7c48780c21bfbe10",
+        "android_client_info": {
+          "package_name": "edu.upeu.exa02_pdm_abantojesus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002345368994-kr1bkl04lp6qe1ol6fitvbk1hhqcvfbt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtQF92gl4mFD2SVcngUNFbPXyNguWzo_Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
