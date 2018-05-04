@@ -11,14 +11,10 @@ import java.util.List;
 import edu.upeu.exa02_pdm_abantojesus.Models.Producto;
 import edu.upeu.exa02_pdm_abantojesus.R;
 
-/**
- * Created by JEMA on 01/05/2018.
- */
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ProductosviewHolder> {
 
     List<Producto> productos;
-
     public Adapter(List<Producto> productos) {
         this.productos = productos;
     }
@@ -29,13 +25,13 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ProductosviewHolder> {
         ProductosviewHolder holder = new ProductosviewHolder(v);
         return holder;
     }
-
     @Override
     public void onBindViewHolder(ProductosviewHolder holder, int position) {
         Producto producto = productos.get(position);
+        holder.idpro.setText(Integer.toString(producto.getId()));
         holder.productoname.setText(producto.getNombre());
         holder.stock.setText(Integer.toString(producto.getStock()));
-        holder.precio.setText(Double.toString(producto.getStock()));
+        holder.precio.setText(Double.toString(producto.getPrecio()));
     }
 
     @Override
@@ -45,15 +41,15 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ProductosviewHolder> {
 
     public static class ProductosviewHolder extends RecyclerView.ViewHolder{
 
-         TextView productoname, precio, stock;
+         TextView idpro, productoname, precio, stock;
 
           public ProductosviewHolder(View itemView) {
              super(itemView);
+
+             idpro = (TextView) itemView.findViewById(R.id.idproducto);
              productoname = (TextView) itemView.findViewById(R.id.txtproducto);
-              stock = (TextView) itemView.findViewById(R.id.txtstock);
+             stock = (TextView) itemView.findViewById(R.id.txtstock);
              precio = (TextView) itemView.findViewById(R.id.txtprecio);
          }
      }
-
-
 }

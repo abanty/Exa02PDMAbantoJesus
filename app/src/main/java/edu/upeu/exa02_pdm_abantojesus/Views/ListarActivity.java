@@ -22,7 +22,6 @@ public class ListarActivity extends AppCompatActivity {
 
     private RecyclerView rv;
     List<Producto> productos;
-
     Adapter adapter;
 
     @Override
@@ -30,7 +29,6 @@ public class ListarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listar);
         rv = (RecyclerView) findViewById(R.id.recycler);
-
 
         rv.setLayoutManager(new LinearLayoutManager(this));
 
@@ -53,14 +51,10 @@ public class ListarActivity extends AppCompatActivity {
                 }
                 adapter.notifyDataSetChanged();
             }
-
             @Override
             public void onCancelled(DatabaseError databaseError) {
 
             }
         });
-
-
-
     }
 }

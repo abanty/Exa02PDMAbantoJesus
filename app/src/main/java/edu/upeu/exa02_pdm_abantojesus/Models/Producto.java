@@ -3,8 +3,8 @@ package edu.upeu.exa02_pdm_abantojesus.Models;
 /**
  * Created by JEMA on 01/05/2018.
  */
-
 public class Producto {
+    int id;
     String nombre;
     double precio;
     int stock;
@@ -12,10 +12,19 @@ public class Producto {
     public Producto() {
     }
 
-    public Producto(String nombre, double precio, int stock) {
+    public Producto(int id, String nombre, double precio, int stock) {
+        this.id = id;
         this.nombre = nombre;
         this.precio = precio;
         this.stock = stock;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNombre() {

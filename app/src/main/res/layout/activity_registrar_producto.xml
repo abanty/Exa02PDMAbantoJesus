@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.upeu.exa02_pdm_abantojesus.Views.RegistrarProductoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textinptuscolors"
+            android:theme="@style/EditTextRed"
+            android:layout_marginTop="@dimen/edittext_margin_createaccount">
+            <android.support.design.widget.TextInputEditText
+            android:id="@+id/edID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Identificador"
+            android:inputType="textEmailAddress"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textinptuscolors"
+            android:theme="@style/EditTextRed"
+            android:layout_marginTop="@dimen/edittext_margin_createaccount">
+            <android.support.design.widget.TextInputEditText
+            android:id="@+id/edproducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre producto"
+            android:inputType="textEmailAddress"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textinptuscolors"
+            android:theme="@style/EditTextRed"
+            android:layout_marginTop="@dimen/edittext_margin_createaccount">
+
+            <android.support.design.widget.TextInputEditText
+            android:id="@+id/edprecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio"
+            android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textinptuscolors"
+            android:theme="@style/EditTextRed"
+            android:layout_marginTop="@dimen/edittext_margin_createaccount">
+            <android.support.design.widget.TextInputEditText
+            android:id="@+id/edstock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Stock"
+            android:inputType="textPersonName"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/registrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar"
+                android:theme="@style/RaisedButtonDark"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

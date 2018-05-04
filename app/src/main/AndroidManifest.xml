@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.upeu.exa02_pdm_abantojesus">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,6 +21,12 @@
         <activity android:name=".Views.ListarActivity">
 
         </activity>
+        <activity android:name=".Views.RegistrarProductoActivity">
+
+        </activity>
+
+        <activity android:name=".Views.TolbarActivity" />
+        <activity android:name=".Views.halfActivity"></activity>
     </application>
 
 </manifest>

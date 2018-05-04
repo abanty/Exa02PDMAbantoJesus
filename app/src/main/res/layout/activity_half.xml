@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.upeu.exa02_pdm_abantojesus.Views.halfActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp">
+            <ImageView
+                android:id="@+id/imagenuser"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/logo"/>
+            <TextView
+                android:id="@+id/textuser"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="2dp"
+                android:text="Bienvenido:Jesus Abanto"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:layout_marginTop="140dp">
+
+            <ImageButton
+                android:id="@+id/agregar"
+                android:layout_width="124dp"
+                android:layout_height="127dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/agregar"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentLeft="true" />
+
+            <ImageButton
+                android:id="@+id/listaproducto"
+                android:layout_width="124dp"
+                android:layout_height="127dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/search"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="140dp"
+            android:layout_alignParentLeft="true">
+
+            <ImageButton
+                android:id="@+id/user"
+                android:layout_width="124dp"
+                android:layout_height="127dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/user"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp" />
+
+            <ImageButton
+                android:id="@+id/compra"
+                android:layout_width="124dp"
+                android:layout_height="127dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/user"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/carro" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout >

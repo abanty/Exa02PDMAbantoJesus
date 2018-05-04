@@ -7,7 +7,7 @@
     <dimen name="textsize_donthaveaccount">16sp</dimen>
     <dimen name="edittext_margin_createaccount">10dp</dimen>
     <dimen name="margin_card">5dp</dimen>
-    <dimen name="corner_card">2dp</dimen>
+    <dimen name="corner_card">12dp</dimen>
     <dimen name="image_card">80dp</dimen>
     <dimen name="image_margin">10dp</dimen>
     <dimen name="textsize">15dp</dimen>
