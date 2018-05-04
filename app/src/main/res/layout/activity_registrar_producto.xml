@@ -18,6 +18,17 @@
             android:padding="@dimen/activity_vertical_margin"
             android:orientation="vertical">
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REGISTRAR TU PRODUCTO"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+
+                android:gravity="center"/>
+
+
             <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Identificador"
-            android:inputType="textEmailAddress"/>
+            android:inputType="text"/>
             </android.support.design.widget.TextInputLayout>
 
 
@@ -44,7 +55,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Nombre producto"
-            android:inputType="textEmailAddress"/>
+            android:inputType="text"/>
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -59,7 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Precio"
-            android:inputType="textPersonName" />
+            android:inputType="numberDecimal" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -73,7 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Stock"
-            android:inputType="textPersonName"/>
+            android:inputType="number"/>
             </android.support.design.widget.TextInputLayout>
 
 

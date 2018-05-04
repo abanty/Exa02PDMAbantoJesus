@@ -10,5 +10,5 @@
     <dimen name="corner_card">12dp</dimen>
     <dimen name="image_card">80dp</dimen>
     <dimen name="image_margin">10dp</dimen>
-    <dimen name="textsize">15dp</dimen>
+    <dimen name="textsize">16dp</dimen>
 </resources>

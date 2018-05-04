@@ -28,7 +28,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ProductosviewHolder> {
     @Override
     public void onBindViewHolder(ProductosviewHolder holder, int position) {
         Producto producto = productos.get(position);
-        holder.idpro.setText(Integer.toString(producto.getId()));
+//        holder.idpro.setText(Integer.toString(producto.getId()));
+        holder.idpro.setText(producto.getId());
         holder.productoname.setText(producto.getNombre());
         holder.stock.setText(Integer.toString(producto.getStock()));
         holder.precio.setText(Double.toString(producto.getPrecio()));

@@ -40,17 +40,20 @@ public class RegistrarProductoActivity extends AppCompatActivity {
            @Override
            public void onClick(View v) {
                         registrarproducto();
+               idpro.setFocusable(true);
            }
        });
     }
 
     private void registrarproducto(){
-        int identificador = Integer.parseInt(idpro.getText().toString().trim());
+//        int identificador = Integer.parseInt(idpro.getText().toString().trim());
+        String identificador = idpro.getText().toString().trim();
         String nombreproducto = namepro.getText().toString().trim();
         double precioproducto = Double.parseDouble(preciopro.getText().toString().trim());
         int stockproducto = Integer.parseInt(stockpro.getText().toString().trim());
 
-        if (String.valueOf(identificador)==""){
+//        if (String.valueOf(identificador)==""){
+        if (TextUtils.isEmpty(identificador)){
             Toast.makeText(this, "Por favor ingresa un ID", Toast.LENGTH_SHORT).show();
             return;
         }else if(TextUtils.isEmpty(nombreproducto)){
@@ -65,7 +68,8 @@ public class RegistrarProductoActivity extends AppCompatActivity {
         }else{
             String id = databaseReference.push().getKey();
 //            Producto producto = new Producto(id,nombre,precio,stock);
-            databaseReference.child(id).child("id").setValue(identificador);
+//            databaseReference.child(id).child("id").setValue(identificador);
+            databaseReference.child(id).child("id").setValue(identificador.toString().trim());
             databaseReference.child(id).child("nombre").setValue(nombreproducto.toString().trim());
             databaseReference.child(id).child("precio").setValue(precioproducto);
             databaseReference.child(id).child("stock").setValue(stockproducto);
