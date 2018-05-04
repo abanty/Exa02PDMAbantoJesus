@@ -11,20 +11,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Views.LoginActivity">
+        <activity android:name=".Views.LoginActivity"></activity>
+        <activity android:name=".Views.ListarActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
-        <activity android:name=".Views.ListarActivity"></activity>
-        <activity android:name=".Views.RegistrarProductoActivity"></activity>
+
+        <activity android:name=".Views.RegistrarProductoActivity" />
         <activity android:name=".Views.TolbarActivity" />
         <activity android:name=".Views.halfActivity" />
         <activity android:name=".Views.SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
+        <activity android:name=".Views.BuysActivity"></activity>
     </application>
 
 </manifest>

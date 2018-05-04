@@ -42,6 +42,14 @@ public class halfActivity extends AppCompatActivity {
             }
         });
 
+        compra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(halfActivity.this,BuysActivity.class);
+                startActivity(intent);
+            }
+        });
+
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

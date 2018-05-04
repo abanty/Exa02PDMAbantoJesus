@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.Button;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -20,6 +21,7 @@ import edu.upeu.exa02_pdm_abantojesus.R;
 
 public class ListarActivity extends AppCompatActivity {
 
+    private Button comprarpro;
     private RecyclerView rv;
     List<Producto> productos;
     Adapter adapter;
@@ -31,6 +33,8 @@ public class ListarActivity extends AppCompatActivity {
         rv = (RecyclerView) findViewById(R.id.recycler);
 
         rv.setLayoutManager(new LinearLayoutManager(this));
+        comprarpro = (Button) findViewById(R.id.dobuy);
+
 
         productos = new ArrayList<>();
 
