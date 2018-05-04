@@ -41,13 +41,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ProductosviewHolder> {
         holder.precio.setText(Double.toString(producto.getPrecio()));
 
         holder.setOnclickListeners();
-
     }
 
     @Override
     public int getItemCount() {
         return productos.size();
-    }
+}
 
 
     public static class ProductosviewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -75,8 +74,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ProductosviewHolder> {
             switch (v.getId()) {
                 case R.id.dobuy:
                     Intent intent = new Intent(context, BuysActivity.class);
+                    intent.putExtra("producto",productoname.getText().toString());
+                    intent.putExtra("precio",precio.getText().toString());
                     context.startActivity(intent);
-
                     break;
 
             }
